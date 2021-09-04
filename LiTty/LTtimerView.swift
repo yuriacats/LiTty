@@ -19,7 +19,7 @@ struct LTtimerView: View {
                         .fill(Color.blue)
                         .frame(width: 250, height: 200, alignment: .topLeading)
                         .overlay(
-                                Text("\(String(self.countTimer.count / 60)):\(String(self.countTimer.count % 60))")
+                                Text("\(String(self.countTimer.count / 60)):\(String(format:"%02d",self.countTimer.count % 60))")
                                         .font(.largeTitle)
                                         .fontWeight(.bold)
                         )

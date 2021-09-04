@@ -1,0 +1,23 @@
+type User @model{
+    id: ID!
+    name: String!
+    memos: [Memo] @connection(name: "UserMemos")
+}
+
+type Memo @model{
+    id: ID!
+    title: String!
+    user: User @connection(name: "UserMemos")
+    memo: String
+    created_at: Int!
+    tasks: [Task] @connection(name: "MemoTasks")
+}
+
+type Task @model {
+    id: ID!
+    memo: Memo  @connection(name: "MemoTasks")
+    title: String!
+    created_at: Int!
+    deadline: Int
+    corrosion_rate: Int
+}
