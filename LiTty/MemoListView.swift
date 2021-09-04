@@ -22,7 +22,7 @@ struct MemoListView: View {
     func preformOnAppear(){
         let date: Date = Date()
         let unixtime: Int = Int(date.timeIntervalSince1970)
-        let item = User(id: "yuriacats", name:"Himeka Tsuchida")
+        let item = User(name:"Himeka Tsuchida")
         //let item = Memo(id: "1110",title: "MEMOTEST" , created_at:unixtime)
 
 
