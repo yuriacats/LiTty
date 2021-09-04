@@ -18,7 +18,7 @@ struct ContentView: View {
                         Text(conference.location).font(.subheadline)
                     }
                 }
-            }.navigationBarTitle("FirstApplication")
+            }.navigationBarTitle("LiTty")
         }
     }
 }

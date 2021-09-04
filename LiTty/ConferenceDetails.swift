@@ -18,6 +18,7 @@ struct ConferenceDetails: View {
             Text(conferences.textDates()).padding(.bottom)
             LinkButton(link: conferences.link).padding(.bottom)
             TextEditor(text: $text).padding(.bottom)
+            NavigationLink(destination: LTtimerView()){Text("LT Timer")}.padding()
         }.frame(minWidth:0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .topLeading)
         .padding()
         .navigationBarTitle(conferences.name)

@@ -15,23 +15,27 @@
 		CA552119D5AEFDBC3B6A1380 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552AD2F3EDB6854809D053 /* Data.swift */; };
 		CA55224CFAA6BAD86284625D /* conferencesData.json in Resources */ = {isa = PBXBuildFile; fileRef = CA55239EC00024809B409B72 /* conferencesData.json */; };
 		CA55227ED337AE53AD7F8F00 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55237DCCFAF510382B3E42 /* Conference.swift */; };
+		CA5523EFD866E8447D4FF1BF /* ConferenceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */; };
 		CA55243778614319E904BD7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5520896478CCAAD029BE39 /* Preview Assets.xcassets */; };
-		CA55251D7794C17A29976EA7 /* ConferenceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5522931CF73F3C86FFEC41 /* ConferenceDetails.swift */; };
+		CA5524E5971309D5DA07B8DC /* TimerCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552341419F1477B8A96D5B /* TimerCircle.swift */; };
 		CA5525A2022333D68FAED017 /* LiTtyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5525BA435095A98BE3DAC3 /* LiTtyUITests.swift */; };
 		CA55261E32EA9BCE92125998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552803503657C4D73CAC1B /* ContentView.swift */; };
 		CA55267B83318739CC0174E2 /* LTtimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552B7B3DA0453CB1049382 /* LTtimerView.swift */; };
 		CA5527546C164CD5D8337461 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552AD2F3EDB6854809D053 /* Data.swift */; };
+		CA5527AB19608A491137E8F3 /* ConferenceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */; };
 		CA5527D415CC5CCDD9A97BE9 /* CountUpTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552DD17C5046EBDB0C9EE8 /* CountUpTimer.swift */; };
 		CA55285BA615552A6AD187B8 /* CountUpTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552DD17C5046EBDB0C9EE8 /* CountUpTimer.swift */; };
 		CA55287EBF85C0938EA90594 /* CountUpTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552DD17C5046EBDB0C9EE8 /* CountUpTimer.swift */; };
 		CA55289A577E7B39DA08DC03 /* LiTtyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552CBECD9B39596597AF64 /* LiTtyApp.swift */; };
+		CA5528BE91952B1B9272FE1E /* ConferenceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */; };
 		CA552A14F5FED3852E702D5D /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55237DCCFAF510382B3E42 /* Conference.swift */; };
-		CA552A8218B9462DFC45A759 /* ConferenceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5522931CF73F3C86FFEC41 /* ConferenceDetails.swift */; };
 		CA552B678DCCBD909F81ADF7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552AD2F3EDB6854809D053 /* Data.swift */; };
 		CA552B83D34228C8B3490C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA552898E311160705DC67F4 /* Assets.xcassets */; };
+		CA552CB25D57C58E58AB6A9A /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5529A9758681332407DAE9 /* MemoListView.swift */; };
 		CA552CF6EAF74C7C9BB12B1D /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55237DCCFAF510382B3E42 /* Conference.swift */; };
 		CA552D285BF80BB0A65E01FC /* LiTtyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552F83683A9BA7870EB614 /* LiTtyTests.swift */; };
-		CA552DECDA61837FC63A4D44 /* ConferenceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5522931CF73F3C86FFEC41 /* ConferenceDetails.swift */; };
+		CA552F5D902E9D5C18656EAB /* TimerCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552341419F1477B8A96D5B /* TimerCircle.swift */; };
+		CA552FAEE322B947F47EB8F7 /* TimerCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552341419F1477B8A96D5B /* TimerCircle.swift */; };
 		E4B4FAC470A82F606DDD6E38 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F2EE651A5C4A22CAADA656C /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
@@ -58,18 +62,20 @@
 		CA5520896478CCAAD029BE39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA55221C6FCDDA5E282E0589 /* LiTty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiTty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA552258C43C4A42DEAF7D4B /* LiTtyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiTtyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA5522931CF73F3C86FFEC41 /* ConferenceDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConferenceDetails.swift; path = Resources/ConferenceDetails.swift; sourceTree = "<group>"; };
+		CA552341419F1477B8A96D5B /* TimerCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCircle.swift; sourceTree = "<group>"; };
 		CA55237DCCFAF510382B3E42 /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
 		CA55239EC00024809B409B72 /* conferencesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = conferencesData.json; sourceTree = "<group>"; };
 		CA5525BA435095A98BE3DAC3 /* LiTtyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiTtyUITests.swift; sourceTree = "<group>"; };
 		CA552803503657C4D73CAC1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA552898E311160705DC67F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA55293E1F39F00837387830 /* LiTtyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiTtyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5529A9758681332407DAE9 /* MemoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
 		CA5529CCDA94C155AFD39E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		CA552AD2F3EDB6854809D053 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		CA552B7B3DA0453CB1049382 /* LTtimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTtimerView.swift; sourceTree = "<group>"; };
+		CA552B7B3DA0453CB1049382 /* LTtimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LTtimerView.swift; path = LiTty/LTtimerView.swift; sourceTree = SOURCE_ROOT; usesTabs = 0; };
 		CA552CBECD9B39596597AF64 /* LiTtyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiTtyApp.swift; sourceTree = "<group>"; };
 		CA552DD17C5046EBDB0C9EE8 /* CountUpTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountUpTimer.swift; sourceTree = "<group>"; };
+		CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceDetails.swift; sourceTree = "<group>"; };
 		CA552F83683A9BA7870EB614 /* LiTtyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiTtyTests.swift; sourceTree = "<group>"; };
 		CA552FA6A776883B5BAD892C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		F4CA36719A5009140927B753 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
@@ -133,8 +139,10 @@
 				CA552803503657C4D73CAC1B /* ContentView.swift */,
 				CA55229F436609024507B220 /* Resources */,
 				CA552059007D1E1FC3F36B72 /* Model */,
-				CA5522931CF73F3C86FFEC41 /* ConferenceDetails.swift */,
 				CA552B7B3DA0453CB1049382 /* LTtimerView.swift */,
+				CA552341419F1477B8A96D5B /* TimerCircle.swift */,
+				CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */,
+				CA5529A9758681332407DAE9 /* MemoListView.swift */,
 			);
 			path = LiTty;
 			sourceTree = "<group>";
@@ -263,8 +271,7 @@
 		CA55249D4512FA7952A8D7D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				TargetAttributes = {
-				};
+				LastUpgradeCheck = 1250;
 			};
 			buildConfigurationList = CA552EEDCCF8D1B320E67738 /* Build configuration list for PBXProject "LiTty" */;
 			compatibilityVersion = "Xcode 12.0";
@@ -326,8 +333,9 @@
 				CA5525A2022333D68FAED017 /* LiTtyUITests.swift in Sources */,
 				CA552119D5AEFDBC3B6A1380 /* Data.swift in Sources */,
 				CA552CF6EAF74C7C9BB12B1D /* Conference.swift in Sources */,
-				CA552DECDA61837FC63A4D44 /* ConferenceDetails.swift in Sources */,
 				CA55287EBF85C0938EA90594 /* CountUpTimer.swift in Sources */,
+				CA5524E5971309D5DA07B8DC /* TimerCircle.swift in Sources */,
+				CA5528BE91952B1B9272FE1E /* ConferenceDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,9 +347,11 @@
 				CA55261E32EA9BCE92125998 /* ContentView.swift in Sources */,
 				CA552B678DCCBD909F81ADF7 /* Data.swift in Sources */,
 				CA55227ED337AE53AD7F8F00 /* Conference.swift in Sources */,
-				CA552A8218B9462DFC45A759 /* ConferenceDetails.swift in Sources */,
 				CA55267B83318739CC0174E2 /* LTtimerView.swift in Sources */,
 				CA5527D415CC5CCDD9A97BE9 /* CountUpTimer.swift in Sources */,
+				CA552F5D902E9D5C18656EAB /* TimerCircle.swift in Sources */,
+				CA5523EFD866E8447D4FF1BF /* ConferenceDetails.swift in Sources */,
+				CA552CB25D57C58E58AB6A9A /* MemoListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +362,9 @@
 				CA552D285BF80BB0A65E01FC /* LiTtyTests.swift in Sources */,
 				CA5527546C164CD5D8337461 /* Data.swift in Sources */,
 				CA552A14F5FED3852E702D5D /* Conference.swift in Sources */,
-				CA55251D7794C17A29976EA7 /* ConferenceDetails.swift in Sources */,
 				CA55285BA615552A6AD187B8 /* CountUpTimer.swift in Sources */,
+				CA552FAEE322B947F47EB8F7 /* TimerCircle.swift in Sources */,
+				CA5527AB19608A491137E8F3 /* ConferenceDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +384,125 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8AA1DC5A26E32D2F00006352 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "\"-Xlinker -interposable\"";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		8AA1DC5B26E32D2F00006352 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				DEVELOPMENT_ASSET_PATHS = "\"LiTty/Preview Content\"";
+				DEVELOPMENT_TEAM = 32MGSABBRF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LiTty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuriacats.LiTty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		8AA1DC5C26E32D2F00006352 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiTty.app/LiTty";
+				INFOPLIST_FILE = LiTtyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuriacats.LiTtyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Staging;
+		};
+		8AA1DC5D26E32D2F00006352 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LiTtyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuriacats.LiTtyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiTty;
+			};
+			name = Staging;
+		};
 		CA55228E52303720E734B302 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -398,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -510,6 +641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -610,6 +742,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA552490A88C5410FA30B84E /* Debug */,
+				8AA1DC5B26E32D2F00006352 /* Staging */,
 				CA55228E52303720E734B302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -619,6 +752,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA55261500986EF152BB13EA /* Debug */,
+				8AA1DC5C26E32D2F00006352 /* Staging */,
 				CA552EDBEDB7AA72AEFEB50A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -628,6 +762,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA552726AB91271E884E5873 /* Debug */,
+				8AA1DC5A26E32D2F00006352 /* Staging */,
 				CA55232B449C3ADE5FF81279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -637,6 +772,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA55243DA208E8761750DD92 /* Debug */,
+				8AA1DC5D26E32D2F00006352 /* Staging */,
 				CA552B9C599671472C0D7F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

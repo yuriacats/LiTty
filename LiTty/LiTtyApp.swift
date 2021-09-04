@@ -12,7 +12,8 @@ import SwiftUI
 struct LiTtyApp: App {
     var body: some Scene {
         WindowGroup {
-            LTtimerView()
+            ContentView()
+            .environmentObject(CountTimer())
         }
     }
 }

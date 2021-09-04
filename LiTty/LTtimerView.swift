@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct LTtimerView: View {
-    @EnvironmentObject var CountUpTimer : CountUpTimer
+    @EnvironmentObject var countTimer : CountTimer
 
     var body: some View {
         NavigationView{
@@ -19,11 +19,14 @@ struct LTtimerView: View {
                         .fill(Color.blue)
                         .frame(width: 250, height: 200, alignment: .topLeading)
                         .overlay(
-                                Text(String(self.CountUpTimer.count))
+                                Text("\(String(self.countTimer.count / 60)):\(String(self.countTimer.count % 60))")
                                         .font(.largeTitle)
                                         .fontWeight(.bold)
                         )
-                Button("Start Timer"){self.CountUpTimer.start()}
+
+                Button("Stop Timer"){self.countTimer.stop()}
+                Button("Start up Timer"){self.countTimer.countUp()}
+                Button("Start down Timer"){self.countTimer.countDown(startCount: 60)}
             }.frame(minWidth:0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .top)
             .padding()
             .navigationBarTitle("LT Timer")
