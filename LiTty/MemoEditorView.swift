@@ -49,7 +49,6 @@ func getMemo(id:String = "test1998" ) -> Memo {
 }
 
 struct MemoEditorView: View {
-    var body: some View {
     @State var showingPopUp = false
     //@State var memo_id :String = "string"
     @State var memo:Memo =  Memo(
@@ -58,10 +57,11 @@ struct MemoEditorView: View {
             memo : "## テスト用メモになります",
             created_at : 1512975404 )
     @State  var showingSeat = false
-    @State var master_memo : Document = (memo.memo != nil) ? Document( memo.memo ) : " "
+    var body: some View {
+        var master_memo : String! = ( memo.memo != nil ) ? memo.memo : ""
         NavigationView{
             VStack(alignment: .leading){
-                Markdown(master_memo)
+                Markdown(Document(master_memo))
             }
             .frame(minWidth:0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .topLeading)
             .padding()
@@ -95,7 +95,7 @@ struct EditView: View{
             .frame(minWidth:0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .topLeading)
             .padding()
             .navigationBarItems(trailing: Button("保存"){
-                self.presentationMode.wrappedValue.dismiss()
+                presentationMode.wrappedValue.dismiss()
             })
         }
     }
