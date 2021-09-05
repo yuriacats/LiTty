@@ -60,7 +60,7 @@ struct MemoEditorView: View {
     @State var ms_memo :String = ""
     @State var memo:Memo =  Memo(
             id : "test1998",
-            title : "LiTty Memo Ver1",
+            title : "LiTty Memo",
             memo : "## テスト用メモになります",
             created_at : 1512975404 )
     @State  var showingSeat = false
