@@ -49,6 +49,7 @@ func getMemo(id:String = "test1998" ) -> Memo {
 }
 
 struct MemoEditorView: View {
+    var body: some View {
     @State var showingPopUp = false
     //@State var memo_id :String = "string"
     @State var memo:Memo =  Memo(
@@ -56,9 +57,8 @@ struct MemoEditorView: View {
             title : "テスト投稿です",
             memo : "## テスト用メモになります",
             created_at : 1512975404 )
-    @State private var showingSeat = false
-    @State var master_memo = (memo.memo != nil) ? memo.memo : ""
-    var body: some View {
+    @State  var showingSeat = false
+    @State var master_memo : Document = (memo.memo != nil) ? Document( memo.memo ) : " "
         NavigationView{
             VStack(alignment: .leading){
                 Markdown(master_memo)
