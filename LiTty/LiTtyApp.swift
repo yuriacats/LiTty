@@ -31,7 +31,7 @@ func configureAmplify(){
 struct LiTtyApp: App {
     var body: some Scene {
         WindowGroup {
-          MemoEditorView()
+          LTtimerView()
             .environmentObject(CountTimer())
         }
     }

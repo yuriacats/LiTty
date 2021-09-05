@@ -15,6 +15,7 @@ import MarkdownUI
 func addMemo(title:String) {
     let unixtime: Int = Int(Date().timeIntervalSince1970)
     let item = Memo(title: title, created_at:unixtime)
+
     //IDを返す関数にする。
     //使用するのはMemoListの方。これを動かしてからIDをMemoEditorViewに渡す
 
@@ -50,15 +51,11 @@ func getMemo(id:String = "test1998" ) -> Memo {
 
 struct MemoEditorView: View {
     @State var showingPopUp = false
-    //@State var memo_id :String = "string"
-    @State var memo:Memo =  Memo(
-            id : "test1998",
-            title : "テスト投稿です",
-            memo : "## テスト用メモになります",
-            created_at : 1512975404 )
+    @State var memo_id :String = "string"
+    @State var memo:Memo = getMemo()
     @State  var showingSeat = false
     var body: some View {
-        var master_memo : String! = ( memo.memo != nil ) ? memo.memo : ""
+        var master_memo : String = ( memo.memo != nil ) ? memo.memo! : ""
         NavigationView{
             VStack(alignment: .leading){
                 Markdown(Document(master_memo))
