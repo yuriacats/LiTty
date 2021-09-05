@@ -25,7 +25,12 @@ func updateMemo(title:String,memo:String,id:String){
 }
 
 func getMemo(id:String) -> Memo {
-    var resultMemo : Memo
+    var id: String
+    var resultMemo: Memo = Memo(
+            id : "test1998",
+            title : "テスト投稿です",
+            memo : "## テスト用メモになります",
+            created_at : 1512975404 )
     Amplify.DataStore.query(Memo.self){
         result in
         switch (result){
@@ -45,10 +50,10 @@ func getMemo(id:String) -> Memo {
 
 struct MemoEditorView: View {
     @State var showingPopUp = false
-    @State var memo_id :String
+    @State var memo_id :String = ""
     @State var memo:Memo = getMemo(id: memo_id)
     @State private var showingSeat = false
-    @state var master_memo = (memo.memo != nil) ? memo.memo : ""
+    @State var master_memo = (memo.memo != nil) ? memo.memo : ""
     var body: some View {
         NavigationView{
             VStack(alignment: .leading){
