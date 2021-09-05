@@ -24,8 +24,8 @@ func updateMemo(title:String,memo:String,id:String){
 
 }
 
-func getMemo(id:String) -> Memo {
-    var id: String
+func getMemo(id:String = "test1998" ) -> Memo {
+    //var id: String = "test1998"
     var resultMemo: Memo = Memo(
             id : "test1998",
             title : "テスト投稿です",
@@ -50,14 +50,14 @@ func getMemo(id:String) -> Memo {
 
 struct MemoEditorView: View {
     @State var showingPopUp = false
-    @State var memo_id :String = ""
-    @State var memo:Memo = getMemo(id: memo_id)
+    //@State var memo_id :String = "string"
+    @State var memo:Memo = getMemo()
     @State private var showingSeat = false
     @State var master_memo = (memo.memo != nil) ? memo.memo : ""
     var body: some View {
         NavigationView{
             VStack(alignment: .leading){
-                Markdown(  )
+                Markdown(master_memo)
             }
             .frame(minWidth:0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .topLeading)
             .padding()
