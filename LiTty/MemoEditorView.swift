@@ -107,7 +107,7 @@ struct EditView: View{
             }
             .frame(minWidth:0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .topLeading)
             .padding()
-            .navigationBarTitle("Markdown　でメモを書く")
+            .navigationBarTitle("メモを書く")
             .navigationBarItems(trailing: Button("保存"){
                 presentationMode.wrappedValue.dismiss()
             })
