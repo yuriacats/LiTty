@@ -3,6 +3,7 @@
 //
 import Foundation
 
+
 let conferencesData: [Conference] = loadFile("conferencesData.json")
 
 func loadFile<T: Decodable>(_ filename:String) -> T{

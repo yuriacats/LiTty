@@ -2,7 +2,7 @@
 import Amplify
 import Foundation
 
-public struct Memo: Model {
+public struct Memo: Model,Identifiable {
   public let id: String
   public var title: String
   public var user: User?

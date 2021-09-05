@@ -8,14 +8,16 @@
 
 import SwiftUI
 import Amplify
-import AWSAPIPlugin
+//import AWSAPIPlugin
 import AWSDataStorePlugin
 
 func configureAmplify(){
+    let models = AmplifyModels()
+    //let apiPlugin = AWSAPIPlugin(modelRegistration: models)
     let dataStorePlugin = AWSDataStorePlugin(modelRegistration: AmplifyModels())
     Amplify.Logging.logLevel = .info
     do {
-        try Amplify.add(plugin: AWSAPIPlugin())
+        //try Amplify.add(plugin: AWSAPIPlugin())
         try Amplify.add(plugin: dataStorePlugin)
         try Amplify.configure()
         print("Initialized Amplify")
@@ -29,7 +31,7 @@ func configureAmplify(){
 struct LiTtyApp: App {
     var body: some Scene {
         WindowGroup {
-           MemoListView()
+          MemoEditorView()
             .environmentObject(CountTimer())
         }
     }

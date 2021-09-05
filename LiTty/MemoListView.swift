@@ -11,36 +11,47 @@ import Amplify
 import Foundation
 
 
+func addMemoFiles() {
+}
 
-struct MemoListView: View {
-    var body: some View {
-        Text("Hello, World!")
-            .onAppear(){
-                self.preformOnAppear()
+func resetMemoFiles(){
+
+}
+func catchMemoFiles() -> [Memo] {
+    var resultMemos : [Memo] = []
+    Amplify.DataStore.query(Memo.self){
+        result in
+        switch (result){
+        case .success(let memos):
+            for memo in memos {
+                resultMemos.append(memo)
             }
-    }
-    func preformOnAppear(){
-        let date: Date = Date()
-        let unixtime: Int = Int(date.timeIntervalSince1970)
-        let item = User(name:"Himeka Tsuchida")
-        //let item = Memo(id: "1110",title: "MEMOTEST" , created_at:unixtime)
-
-
-        Amplify.DataStore.save(item){
-            result in
-            switch (result){
-            case .success(let savedItem):
-                print("Saved item: \(savedItem.id)")
-            case .failure(let error):
-                print("Could not save item to DataStore \(error)")
-            }
+        case .failure( let error):
+            print("Could not query DataStore: error")
         }
     }
+    return resultMemos
+}
+
+struct MemoListView: View {
+    var memos : [Memo] = catchMemoFiles()
+    var body: some View {
+        NavigationView{
+           List(memos){  Content in
+               NavigationLink(destination: MemoEditorView(id:Content.id)){
+                   VStack(alignment: .leading){
+                       Text( Content.title).font(.headline)
+                   }
+               }
+           }
+        }.navigationBarTitle("LT memos")
+    }
+
 }
 
 
 struct MemoListView_Previews: PreviewProvider {
-    static var previews: some View {
-        MemoListView()
+        static var previews: some View {
+            MemoListView()
+        }
     }
-}

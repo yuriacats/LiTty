@@ -1,4 +1,52 @@
 {
     "Version": 5,
-    "ElasticsearchWarning": true
+    "ElasticsearchWarning": true,
+    "StackMapping": {
+        "UsermemosResolver": "ConnectionStack 6",
+        "MemouserResolver": "ConnectionStack 6",
+        "MemotasksResolver": "ConnectionStack 6",
+        "TaskmemoResolver": "ConnectionStack 6",
+        "MemoTable": "Memo 6",
+        "MemoIAMRole": "Memo 6",
+        "MemoDataSource": "Memo 6",
+        "GetMemoResolver": "Memo 6",
+        "ListMemoResolver": "Memo 6",
+        "CreateMemoResolver": "Memo 6",
+        "UpdateMemoResolver": "Memo 6",
+        "DeleteMemoResolver": "Memo 6",
+        "GetAttMemoTableStreamArn": "Memo 6",
+        "GetAttMemoDataSourceName": "Memo 6",
+        "GetAttMemoTableName": "Memo 6",
+        "TaskTable": "Task 6",
+        "TaskIAMRole": "Task 6",
+        "TaskDataSource": "Task 6",
+        "GetTaskResolver": "Task 6",
+        "ListTaskResolver": "Task 6",
+        "CreateTaskResolver": "Task 6",
+        "UpdateTaskResolver": "Task 6",
+        "DeleteTaskResolver": "Task 6",
+        "GetAttTaskTableStreamArn": "Task 6",
+        "GetAttTaskDataSourceName": "Task 6",
+        "GetAttTaskTableName": "Task 6",
+        "UserTable": "User 6",
+        "UserIAMRole": "User 6",
+        "UserDataSource": "User 6",
+        "GetUserResolver": "User 6",
+        "ListUserResolver": "User 6",
+        "CreateUserResolver": "User 6",
+        "UpdateUserResolver": "User 6",
+        "DeleteUserResolver": "User 6",
+        "GetAttUserTableStreamArn": "User 6",
+        "GetAttUserDataSourceName": "User 6",
+        "GetAttUserTableName": "User 6",
+        "SyncMemoResolver": "Memo 6",
+        "SyncTaskResolver": "Task 6",
+        "SyncUserResolver": "User 6"
+    },
+    "ResolverConfig": {
+        "project": {
+            "ConflictHandler": "AUTOMERGE",
+            "ConflictDetection": "VERSION"
+        }
+    }
 }

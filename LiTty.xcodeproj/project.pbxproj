@@ -11,6 +11,7 @@
 		8AA1DC5526E309FC00006352 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 8AA1DC5426E309FC00006352 /* AWSCognitoAuthPlugin */; };
 		8AA1DC5726E309FC00006352 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 8AA1DC5626E309FC00006352 /* AWSAPIPlugin */; };
 		8AA1DC5926E309FC00006352 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 8AA1DC5826E309FC00006352 /* AWSDataStorePlugin */; };
+		8AA1DC6326E4524800006352 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8AA1DC6226E4524800006352 /* MarkdownUI */; };
 		A1ED290B9F348B5AD4021F13 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F4CA36719A5009140927B753 /* amplifyconfiguration.json */; };
 		CA552119D5AEFDBC3B6A1380 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552AD2F3EDB6854809D053 /* Data.swift */; };
 		CA5521B9076DD9C927C51E44 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5528FA59C47538841C0F91 /* Task.swift */; };
@@ -19,6 +20,7 @@
 		CA5522841CC7BA364B7A875F /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55291157B06C434B3EE798 /* AmplifyModels.swift */; };
 		CA5523C64776440AFF61E6BA /* Memo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5526A917482F5A41672BD0 /* Memo+Schema.swift */; };
 		CA5523EFD866E8447D4FF1BF /* ConferenceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */; };
+		CA55241731A5D2BE525FE59B /* MemoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5521BA9CB32A15EF0ECE6B /* MemoEditorView.swift */; };
 		CA55243778614319E904BD7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5520896478CCAAD029BE39 /* Preview Assets.xcassets */; };
 		CA552457082BFB2BC43C2638 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552892FB6BE07FC6B0C84C /* User.swift */; };
 		CA5524E5971309D5DA07B8DC /* TimerCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552341419F1477B8A96D5B /* TimerCircle.swift */; };
@@ -83,6 +85,7 @@
 		CA552076AAFFB1AF06EBB3D8 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
 		CA5520896478CCAAD029BE39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA5520B204D14BA7C0F71FCD /* Memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		CA5521BA9CB32A15EF0ECE6B /* MemoEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoEditorView.swift; sourceTree = "<group>"; };
 		CA55221C6FCDDA5E282E0589 /* LiTty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiTty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA552258C43C4A42DEAF7D4B /* LiTtyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiTtyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA552341419F1477B8A96D5B /* TimerCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCircle.swift; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 				8AA1DC5326E309FC00006352 /* Amplify in Frameworks */,
 				8AA1DC5526E309FC00006352 /* AWSCognitoAuthPlugin in Frameworks */,
 				8AA1DC5926E309FC00006352 /* AWSDataStorePlugin in Frameworks */,
+				8AA1DC6326E4524800006352 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +176,7 @@
 				CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */,
 				CA5529A9758681332407DAE9 /* MemoListView.swift */,
 				CA5524F2372C1BA711F826BF /* models */,
+				CA5521BA9CB32A15EF0ECE6B /* MemoEditorView.swift */,
 			);
 			path = LiTty;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				8AA1DC5426E309FC00006352 /* AWSCognitoAuthPlugin */,
 				8AA1DC5626E309FC00006352 /* AWSAPIPlugin */,
 				8AA1DC5826E309FC00006352 /* AWSDataStorePlugin */,
+				8AA1DC6226E4524800006352 /* MarkdownUI */,
 			);
 			productName = LiTty;
 			productReference = CA55221C6FCDDA5E282E0589 /* LiTty.app */;
@@ -336,6 +342,7 @@
 			mainGroup = CA552313E769286F0371BDDA;
 			packageReferences = (
 				8AA1DC5126E309FC00006352 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+				8AA1DC6126E4524800006352 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
 			);
 			productRefGroup = CA55249D6E233B5C6AEB3F7D /* Products */;
 			projectDirPath = "";
@@ -418,6 +425,7 @@
 				CA552A129C8E70B29EBAD63F /* Task+Schema.swift in Sources */,
 				CA5529D90DFB545B3FA91076 /* User+Schema.swift in Sources */,
 				CA5529927B3125DF341E011F /* AmplifyModels.swift in Sources */,
+				CA55241731A5D2BE525FE59B /* MemoEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,6 +870,14 @@
 				minimumVersion = 1.13.4;
 			};
 		};
+		8AA1DC6126E4524800006352 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -884,6 +900,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8AA1DC5126E309FC00006352 /* XCRemoteSwiftPackageReference "amplify-ios" */;
 			productName = AWSDataStorePlugin;
+		};
+		8AA1DC6226E4524800006352 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AA1DC6126E4524800006352 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
