@@ -38,7 +38,7 @@ struct MemoListView: View {
     var body: some View {
         NavigationView{
            List(memos){  Content in
-               NavigationLink(destination: MemoEditorView(id:Content.id)){
+               NavigationLink(destination: MemoEditorView(memo_id:Content.id)){
                    VStack(alignment: .leading){
                        Text( Content.title).font(.headline)
                    }

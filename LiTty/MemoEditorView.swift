@@ -45,10 +45,10 @@ func getMemo(id:String) -> Memo {
 
 struct MemoEditorView: View {
     @State var showingPopUp = false
-    @State var memo_id :String = ""
-    @State var memo:Memo = getMemo(id:id)
+    @State var memo_id :String
+    @State var memo:Memo = getMemo(id: memo_id)
     @State private var showingSeat = false
-    var memo = (memo.memo != nil) ? memo.memo : ""
+    @state var master_memo = (memo.memo != nil) ? memo.memo : ""
     var body: some View {
         NavigationView{
             VStack(alignment: .leading){
@@ -113,6 +113,6 @@ struct ChangeMemoNameView: View{
 
 struct MemoEditorView_Previews: PreviewProvider {
     static var previews: some View {
-        MemoEditorView(id: "hoge0" )
+        MemoEditorView(memo_id: "hoge0" )
     }
 }
