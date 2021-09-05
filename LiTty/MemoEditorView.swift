@@ -11,10 +11,17 @@ import Amplify
 import Foundation
 import AWSDataStorePlugin
 import MarkdownUI
-
 func addMemo(title:String) {
     let unixtime: Int = Int(Date().timeIntervalSince1970)
-    let item = Memo(title: title, created_at:unixtime)
+    let item = Memo(id: "test",title: title, created_at:unixtime)
+    Amplify.DataStore.save(item) { result in
+        switch(result) {
+        case .success(let savedItem):
+            print("Saved item: \(savedItem.created_at)")
+        case .failure(let error):
+            print("Could not save item to DataStore: \(error)")
+        }
+    }
     //IDを返す関数にする。
     //使用するのはMemoListの方。これを動かしてからIDをMemoEditorViewに渡す
 
@@ -25,7 +32,6 @@ func updateMemo(title:String,memo:String,id:String){
 }
 
 func getMemo(id:String = "test1998" ) -> Memo {
-    //var id: String = "test1998"
     var resultMemo: Memo = Memo(
             id : "test1998",
             title : "テスト投稿です",
@@ -50,32 +56,39 @@ func getMemo(id:String = "test1998" ) -> Memo {
 
 struct MemoEditorView: View {
     @State var showingPopUp = false
-    //@State var memo_id :String = "string"
+    @State var memo_id :String = "string"
+    @State var ms_memo :String = ""
     @State var memo:Memo =  Memo(
             id : "test1998",
-            title : "テスト投稿です",
+            title : "LiTty Memo Ver1",
             memo : "## テスト用メモになります",
             created_at : 1512975404 )
     @State  var showingSeat = false
     var body: some View {
-        var master_memo : String! = ( memo.memo != nil ) ? memo.memo : ""
+        var master_memo : String = ( memo.memo != nil ) ? memo.memo! : ""
         NavigationView{
             VStack(alignment: .leading){
-                Markdown(Document(master_memo))
+                Markdown(Document(ms_memo))
             }
             .frame(minWidth:0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .topLeading)
             .padding()
             .onTapGesture(count:2){ self.showingSeat.toggle() }
             .navigationBarTitle(memo.title)
             .toolbar{
+                ToolbarItem(placement: .navigationBarLeading){
+                    NavigationLink(destination: LTtimerView()){
+                        Image(systemName: "paperplane")
+                    }
+                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {self.showingSeat.toggle() }) {
+                    //Button(action: {addMemo(title:"テスト投稿です")}){
                         Image(systemName: "pencil.and.outline")
                     }
                 }
             }
             .sheet(isPresented: $showingSeat ){
-                EditView(text:"hogehoge" )
+                EditView(text: $ms_memo )
             }
 
         }
@@ -84,7 +97,7 @@ struct MemoEditorView: View {
 }
 
 struct EditView: View{
-    @State var text = ""
+    @Binding var text:String
     @Environment(\.presentationMode) var presentationMode
     var body: some View{
         NavigationView{
@@ -94,6 +107,7 @@ struct EditView: View{
             }
             .frame(minWidth:0, maxWidth: .infinity, minHeight: 0,maxHeight: .infinity, alignment: .topLeading)
             .padding()
+            .navigationBarTitle("Markdown　でメモを書く")
             .navigationBarItems(trailing: Button("保存"){
                 presentationMode.wrappedValue.dismiss()
             })
