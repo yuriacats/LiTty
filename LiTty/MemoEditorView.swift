@@ -51,7 +51,11 @@ func getMemo(id:String = "test1998" ) -> Memo {
 struct MemoEditorView: View {
     @State var showingPopUp = false
     //@State var memo_id :String = "string"
-    @State var memo:Memo = getMemo()
+    @State var memo:Memo =  Memo(
+            id : "test1998",
+            title : "テスト投稿です",
+            memo : "## テスト用メモになります",
+            created_at : 1512975404 )
     @State private var showingSeat = false
     @State var master_memo = (memo.memo != nil) ? memo.memo : ""
     var body: some View {
@@ -118,6 +122,6 @@ struct ChangeMemoNameView: View{
 
 struct MemoEditorView_Previews: PreviewProvider {
     static var previews: some View {
-        MemoEditorView(memo_id: "hoge0" )
+        MemoEditorView()
     }
 }
