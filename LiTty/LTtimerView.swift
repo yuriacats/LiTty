@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-
 struct LTtimerView: View {
     @EnvironmentObject var countTimer : CountTimer
 
