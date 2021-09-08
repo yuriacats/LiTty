@@ -19,20 +19,20 @@ class CountTimer : ObservableObject {
         XSound.play()
     }
     func countUp(){
-        self.stopping_mode = 1
-        self.timer?.invalidate()
-        self.count = 0
-        self.timer = Timer.scheduledTimer(withTimeInterval:1 , repeats: true){
+        stopping_mode = 1
+        timer?.invalidate()
+        count = 0
+        timer = Timer.scheduledTimer(withTimeInterval:1 , repeats: true){
             _ in
             self.count += 1
         }
     }
     func countDown(startCount: Int){
-        self.stopping_mode = -1
-        self.count = startCount
-        self.timer?.invalidate()
-        self.overCount = 0
-        self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ _ in
+        stopping_mode = -1
+        count = startCount
+        timer?.invalidate()
+        overCount = 0
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ _ in
             if(self.count > 0) {
                 self.count = self.count - 1
             }else if(self.count == 0 && self.stopping_mode == -1){
@@ -45,7 +45,7 @@ class CountTimer : ObservableObject {
     }
 
     func stop(){
-        self.stopping_mode = self.stopping_mode * 2
+        stopping_mode = stopping_mode * 2
        if timer != nil{
            timer.invalidate()
        }
@@ -56,25 +56,25 @@ class CountTimer : ObservableObject {
             countUp()
         } else if  stopping_mode < 2 && stopping_mode > -2{
             timer.invalidate()
-            self.stopping_mode = self.stopping_mode * 2
-            print(self.stopping_mode)
+           stopping_mode = stopping_mode * 2
+            print(stopping_mode)
         }else if stopping_mode == 2 {
-            self.stopping_mode = self.stopping_mode / 2
-            self.timer = Timer.scheduledTimer(withTimeInterval:1 , repeats: true){
+            stopping_mode = stopping_mode / 2
+            timer = Timer.scheduledTimer(withTimeInterval:1 , repeats: true){
                 _ in
                 self.count += 1
             }
-            print(self.stopping_mode)
+            print(stopping_mode)
         }else if stopping_mode == -2{
-            self.stopping_mode = self.stopping_mode / 2
-            self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ _ in
+            stopping_mode = stopping_mode / 2
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ _ in
                 if(self.count > 0){
                     self.count = self.count - 1
                 }else{
                     self.overCount += 1
                 }
             }
-            print(self.stopping_mode)
+            print(stopping_mode)
         }
     }
 }
