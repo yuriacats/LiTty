@@ -14,39 +14,40 @@ struct LTtimerView: View {
         NavigationView {
         VStack{
             VStack(alignment: .center) {
-                Button(action: { self.countTimer.stopOrRestart() }) {
+                Button(action: { countTimer.stopOrRestart() }) {
                     Circle()
                             .stroke(lineWidth: 20)
-                            .fill(Color.blue)
+                            .fill(countTimer.nowColor)
                             .frame(width: 250, height: 200, alignment: .topLeading)
                             .overlay(
-                                    Text("\(String(self.countTimer.count / 60)):\(String(format: "%02d", self.countTimer.count % 60))")
+                                    Text("\(String(countTimer.count / 60)):\(String(format: "%02d", countTimer.count % 60))")
                                             .font(.largeTitle)
                                             .fontWeight(.bold)
+                                            .foregroundColor( countTimer.nowColor)
                             )
                 }
             }.padding()
             VStack(alignment: .leading) {
                 List {
-                    Button(action: { self.countTimer.stop() }) {
+                    Button(action: { countTimer.stop() }) {
                         Text("Stop")
                     }
-                    Button(action: { self.countTimer.countUp() }) {
+                    Button(action: { countTimer.countUp() }) {
                         Text("CountUP")
                     }
-                    Button(action: { self.countTimer.countDown(startCount: 30) }) {
+                    Button(action: { countTimer.countDown(startCount: 30) }) {
                         Text("30 sec")
                     }
-                    Button(action: { self.countTimer.countDown(startCount: 60) }) {
+                    Button(action: { countTimer.countDown(startCount: 60) }) {
                         Text("1 min")
                     }
-                    Button(action: { self.countTimer.countDown(startCount: 180) }) {
+                    Button(action: { countTimer.countDown(startCount: 180) }) {
                         Text("3 min")
                     }
-                    Button(action: { self.countTimer.countDown(startCount: 300) }) {
+                    Button(action: { countTimer.countDown(startCount: 300) }) {
                         Text("5 min")
                     }
-                    Button(action: { self.countTimer.countDown(startCount: 420) }) {
+                    Button(action: { countTimer.countDown(startCount: 420) }) {
                         Text("7 min")
                     }
                 }
