@@ -19,26 +19,22 @@
 		CA55227ED337AE53AD7F8F00 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55237DCCFAF510382B3E42 /* Conference.swift */; };
 		CA5522841CC7BA364B7A875F /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55291157B06C434B3EE798 /* AmplifyModels.swift */; };
 		CA5523C64776440AFF61E6BA /* Memo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5526A917482F5A41672BD0 /* Memo+Schema.swift */; };
-		CA5523EFD866E8447D4FF1BF /* ConferenceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */; };
 		CA55241731A5D2BE525FE59B /* MemoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5521BA9CB32A15EF0ECE6B /* MemoEditorView.swift */; };
 		CA55243778614319E904BD7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5520896478CCAAD029BE39 /* Preview Assets.xcassets */; };
 		CA552457082BFB2BC43C2638 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552892FB6BE07FC6B0C84C /* User.swift */; };
 		CA5524E5971309D5DA07B8DC /* TimerCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552341419F1477B8A96D5B /* TimerCircle.swift */; };
 		CA5524F93EEAF446E4FECF98 /* Task+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552A3659F3FCE36E291F20 /* Task+Schema.swift */; };
 		CA5525A2022333D68FAED017 /* LiTtyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5525BA435095A98BE3DAC3 /* LiTtyUITests.swift */; };
-		CA55261E32EA9BCE92125998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552803503657C4D73CAC1B /* ContentView.swift */; };
 		CA55263F92F95883B6779599 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552076AAFFB1AF06EBB3D8 /* User+Schema.swift */; };
 		CA55267B83318739CC0174E2 /* LTtimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552B7B3DA0453CB1049382 /* LTtimerView.swift */; };
 		CA5527546C164CD5D8337461 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552AD2F3EDB6854809D053 /* Data.swift */; };
 		CA55279E6C5E2E0F59DE2FC1 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5520B204D14BA7C0F71FCD /* Memo.swift */; };
-		CA5527AB19608A491137E8F3 /* ConferenceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */; };
 		CA5527D415CC5CCDD9A97BE9 /* CountUpTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552DD17C5046EBDB0C9EE8 /* CountUpTimer.swift */; };
 		CA55285BA615552A6AD187B8 /* CountUpTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552DD17C5046EBDB0C9EE8 /* CountUpTimer.swift */; };
 		CA5528605DF162C559F309A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552892FB6BE07FC6B0C84C /* User.swift */; };
 		CA55287EBF85C0938EA90594 /* CountUpTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552DD17C5046EBDB0C9EE8 /* CountUpTimer.swift */; };
 		CA55287EC5DF518C0D7EF5EE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5528FA59C47538841C0F91 /* Task.swift */; };
 		CA55289A577E7B39DA08DC03 /* LiTtyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552CBECD9B39596597AF64 /* LiTtyApp.swift */; };
-		CA5528BE91952B1B9272FE1E /* ConferenceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */; };
 		CA5528D6105F81C2495D28D4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552892FB6BE07FC6B0C84C /* User.swift */; };
 		CA5529927B3125DF341E011F /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55291157B06C434B3EE798 /* AmplifyModels.swift */; };
 		CA5529D90DFB545B3FA91076 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA552076AAFFB1AF06EBB3D8 /* User+Schema.swift */; };
@@ -93,7 +89,6 @@
 		CA55239EC00024809B409B72 /* conferencesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = conferencesData.json; sourceTree = "<group>"; };
 		CA5525BA435095A98BE3DAC3 /* LiTtyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiTtyUITests.swift; sourceTree = "<group>"; };
 		CA5526A917482F5A41672BD0 /* Memo+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Memo+Schema.swift"; sourceTree = "<group>"; };
-		CA552803503657C4D73CAC1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA552892FB6BE07FC6B0C84C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CA552898E311160705DC67F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA5528FA59C47538841C0F91 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -106,7 +101,6 @@
 		CA552B7B3DA0453CB1049382 /* LTtimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LTtimerView.swift; path = LiTty/LTtimerView.swift; sourceTree = SOURCE_ROOT; usesTabs = 0; };
 		CA552CBECD9B39596597AF64 /* LiTtyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiTtyApp.swift; sourceTree = "<group>"; };
 		CA552DD17C5046EBDB0C9EE8 /* CountUpTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountUpTimer.swift; sourceTree = "<group>"; };
-		CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceDetails.swift; sourceTree = "<group>"; };
 		CA552F83683A9BA7870EB614 /* LiTtyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiTtyTests.swift; sourceTree = "<group>"; };
 		CA552FA6A776883B5BAD892C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		F4CA36719A5009140927B753 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
@@ -168,12 +162,10 @@
 				CA552898E311160705DC67F4 /* Assets.xcassets */,
 				CA552912B466C6455B2DBE01 /* Preview Content */,
 				CA552CBECD9B39596597AF64 /* LiTtyApp.swift */,
-				CA552803503657C4D73CAC1B /* ContentView.swift */,
 				CA55229F436609024507B220 /* Resources */,
 				CA552059007D1E1FC3F36B72 /* Model */,
 				CA552B7B3DA0453CB1049382 /* LTtimerView.swift */,
 				CA552341419F1477B8A96D5B /* TimerCircle.swift */,
-				CA552EC90D48DFA102C66DF3 /* ConferenceDetails.swift */,
 				CA5529A9758681332407DAE9 /* MemoListView.swift */,
 				CA5524F2372C1BA711F826BF /* models */,
 				CA5521BA9CB32A15EF0ECE6B /* MemoEditorView.swift */,
@@ -394,7 +386,6 @@
 				CA552CF6EAF74C7C9BB12B1D /* Conference.swift in Sources */,
 				CA55287EBF85C0938EA90594 /* CountUpTimer.swift in Sources */,
 				CA5524E5971309D5DA07B8DC /* TimerCircle.swift in Sources */,
-				CA5528BE91952B1B9272FE1E /* ConferenceDetails.swift in Sources */,
 				CA55279E6C5E2E0F59DE2FC1 /* Memo.swift in Sources */,
 				CA5521B9076DD9C927C51E44 /* Task.swift in Sources */,
 				CA5528605DF162C559F309A1 /* User.swift in Sources */,
@@ -410,13 +401,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA55289A577E7B39DA08DC03 /* LiTtyApp.swift in Sources */,
-				CA55261E32EA9BCE92125998 /* ContentView.swift in Sources */,
 				CA552B678DCCBD909F81ADF7 /* Data.swift in Sources */,
 				CA55227ED337AE53AD7F8F00 /* Conference.swift in Sources */,
 				CA55267B83318739CC0174E2 /* LTtimerView.swift in Sources */,
 				CA5527D415CC5CCDD9A97BE9 /* CountUpTimer.swift in Sources */,
 				CA552F5D902E9D5C18656EAB /* TimerCircle.swift in Sources */,
-				CA5523EFD866E8447D4FF1BF /* ConferenceDetails.swift in Sources */,
 				CA552CB25D57C58E58AB6A9A /* MemoListView.swift in Sources */,
 				CA552E5A70CBF5F40EE9E6AD /* Memo.swift in Sources */,
 				CA552E4DE4F401E5CA2B136E /* Task.swift in Sources */,
@@ -438,7 +427,6 @@
 				CA552A14F5FED3852E702D5D /* Conference.swift in Sources */,
 				CA55285BA615552A6AD187B8 /* CountUpTimer.swift in Sources */,
 				CA552FAEE322B947F47EB8F7 /* TimerCircle.swift in Sources */,
-				CA5527AB19608A491137E8F3 /* ConferenceDetails.swift in Sources */,
 				CA552E94E8A54B41EA17D77D /* Memo.swift in Sources */,
 				CA55287EC5DF518C0D7EF5EE /* Task.swift in Sources */,
 				CA5528D6105F81C2495D28D4 /* User.swift in Sources */,

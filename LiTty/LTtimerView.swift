@@ -9,6 +9,7 @@
 import SwiftUI
 struct LTtimerView: View {
     @EnvironmentObject var countTimer : CountTimer
+    @State var selectedMaxTime : Int = 10
 
     var body: some View {
         NavigationView {
@@ -29,12 +30,12 @@ struct LTtimerView: View {
             }.padding()
             VStack(alignment: .leading) {
                 List {
-                    Button(action: { countTimer.stop() }) {
-                        Text("Stop")
-                    }
-                    Button(action: { countTimer.countUp() }) {
-                        Text("CountUP")
-                    }
+                    //Button(action: { countTimer.stop() }) {
+                    //    Text("Stop")
+                    //}
+                    //Button(action: { countTimer.countUp() }) {
+                    //    Text("CountUP")
+                    //}
                     Button(action: { countTimer.countDown(startCount: 30) }) {
                         Text("30 sec")
                     }
@@ -49,6 +50,11 @@ struct LTtimerView: View {
                     }
                     Button(action: { countTimer.countDown(startCount: 420) }) {
                         Text("7 min")
+                    }
+                    Button(action: { countTimer.countDown(startCount: (selectedMaxTime*60) )}){
+                        Stepper(value: $selectedMaxTime){
+                            Text("\(selectedMaxTime) min")
+                        }
                     }
                 }
             }
