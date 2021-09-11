@@ -52,7 +52,7 @@ struct LTtimerView: View {
                         Text("7 min")
                     }
                     Button(action: { countTimer.countDown(startCount: (selectedMaxTime*60) )}){
-                        Stepper(value: $selectedMaxTime){
+                        Stepper(value: $selectedMaxTime, in: 0...100){
                             Text("\(selectedMaxTime) min")
                         }
                     }
