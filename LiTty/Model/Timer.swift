@@ -25,7 +25,7 @@ class CountTimer : ObservableObject {
         //print("count:\(count)")
         //print("maxCount:\(maxCount)")
         //print("count/maxCount:\(Double(count)/Double(maxCount))")
-        if (Double(count)/Double(maxCount)) < 0.2 {
+        if (Double(count)/Double(maxCount)) < 0.2 && maxCount != -1 {
             nowColor = Color.orange
         }else if(maxCount == -1){
             nowColor = Color.green
@@ -44,6 +44,7 @@ class CountTimer : ObservableObject {
         stopping_mode = 1
         timer?.invalidate()
         count = 0
+        changeColor()
         timer = Timer.scheduledTimer(withTimeInterval:1 , repeats: true){
             _ in
             self.count += 1
@@ -73,6 +74,7 @@ class CountTimer : ObservableObject {
         stopping_mode = stopping_mode * 2
        if timer != nil{
            timer.invalidate()
+           changeColor()
        }
     }
 
