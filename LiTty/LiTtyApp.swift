@@ -31,8 +31,8 @@ func configureAmplify(){
 struct LiTtyApp: App {
     var body: some Scene {
         WindowGroup {
-         MemoEditorView()
-         .environmentObject(CountTimer())
+            testAppView()
+            .environmentObject(CountTimer())
         }
     }
     public init(){
